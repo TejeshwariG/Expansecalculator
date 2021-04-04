@@ -32,7 +32,7 @@ def exp_dict_update(exp_n, exp_a):
         SALARY_BALANCE -= exp_a
         TOTAL_EXP += exp_a
         
-        
+       
 def exp_dict(exp_n, exp_a):
     """Validating of Inputs & Updating Dictionary"""
     global LST_OF_EXP, SALARY_BALANCE
