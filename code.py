@@ -6,7 +6,7 @@ def output(exp_lst):
     """Prints the output data"""
     print("\nDate", datetime.date.today())
     print("Time", datetime.datetime.now().strftime("%H:%M:%S"))
-    print("E X P E N D I T U R E S  T A B L E".ljust(41, " "))
+    print("E X P E N D I T U R E S  T A B L E")
     print("-" * 50)
     print("SALARY".ljust(40, " "), ":", SALARY, "/-")
     print("-" * 50)
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     SALARY_BALANCE = SALARY
     VALIDITY = True
     while VALIDITY:
-        exp_name = input("ENTER YOUR EXPENDITURE NAME: ").lower()
+        exp_name = input("ENTER YOUR EXPENDITURE NAME: ").lower().strip()
         LST_OF_EXP.append(exp_name)
         exp_amt = validate("AMOUNT")
         valid = exp_dict(exp_name,exp_amt)
