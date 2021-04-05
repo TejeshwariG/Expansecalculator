@@ -16,3 +16,9 @@ sys- It is used to exit from the code.
 
 
 
+contributers:
+Vinod kumar kotha
+Salman shaik
+Lava kishor Dasu
+Tejeshwari Gandi
+Rohit prashant kannam
