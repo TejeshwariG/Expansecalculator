@@ -54,7 +54,7 @@ def validate(Input):
     while True:
         try:
             value = float(input(f"ENTER YOUR {Input}:: "))
-            if value < 0:
+            if value <= 0:
                 raise Exception
             else:
                 return value
