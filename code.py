@@ -17,7 +17,7 @@ def output(exp_lst):
             print(j, " " * (40 - len(j) - 1), ":", DICT[j])
     print("-" * 50)
     print("TOTAL_EXP".ljust(40, " "), ":", TOTAL_EXP, "/-")
-    print("Balance".ljust(40, " "), ":", SALARY - TOTAL_EXP, "/-")
+    print("Balance".ljust(40, " "), ":", round(SALARY - TOTAL_EXP,2), "/-")
     
     
 def exp_dict_update(exp_n, exp_a):
@@ -71,10 +71,16 @@ if __name__ == "__main__":
     SALARY_BALANCE = SALARY
     VALIDITY = True
     while VALIDITY:
-        exp_name = input("ENTER YOUR EXPENDITURE NAME: ").lower().strip()
-        LST_OF_EXP.append(exp_name)
+        exp_name = input("ENTER YOUR EXPENDITURE NAME: ").lower()
+        exp_name1 = ''
+        for i in exp_name:
+            if i = " ":
+                pass
+            else:
+                exp_name1+=i
+        LST_OF_EXP.append(exp_name1)
         exp_amt = validate("AMOUNT")
-        valid = exp_dict(exp_name,exp_amt)
+        valid = exp_dict(exp_name1,exp_amt)
         if not valid :
             break
         while VALIDITY:
